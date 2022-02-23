@@ -1,15 +1,26 @@
+let numSec = document.querySelector(".number-sec")
+
 for (let i = 1; i <= 100; i++ ){
-    let element = document.createElement(`div`);
-    element.classList.add(`box`);
-    element.innerHTML = i;
+    let square = document.createElement(`div`);
+    square.classList.add(`box`);
+    square.innerHTML = i;
     console.log(i);
     if (i % 15 == 0){
-        element.classList.add(`buzzfizz`)
+        square.classList.add(`buzzfizz`)
+        square.innerHTML = "BuzzFizz";
+
     } else if (i % 3 == 0){
-        element.classList.add(`fizz`)
+        square.classList.add(`fizz`)
+        square.innerHTML = "Fizz";
+
     } else if (i % 5 == 0){
-        element.classList.add(`buzz`)
+        square.classList.add(`buzz`)
+        square.innerHTML = "Buzz";
+
     }
-    document.querySelector(".number-sec").append(element);
+    numSec.append(square);
+
 }
+
+
 
