@@ -11,7 +11,7 @@ body{
 
 .container{
     width: 700px;
-    background-color: rgb(3, 3, 170);
+    background-color: rgb(27, 27, 133);
     margin: 0 auto;
     text-align: center;
 }
@@ -33,16 +33,17 @@ body{
 }
 
 .fizz{
-    background-color: orange;
+    background-color: rgb(94, 179, 105);
 }
 
 .buzz{
-    background-color: yellow;
+    background-color: rgb(31, 74, 167);
 }
 
 .buzzfizz{
     background-color: red;
-    animation: color 2s  infinite 
+    animation: color 10s  infinite;
+
 }
 
 @keyframes color{
@@ -63,7 +64,7 @@ body{
     }
 
     85%{
-        background-color: violet;
+        background-color: purple;
     }
     
 }
