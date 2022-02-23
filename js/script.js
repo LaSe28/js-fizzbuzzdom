@@ -16,10 +16,8 @@ for (let i = 1; i <= 100; i++ ){
     } else if (i % 5 == 0){
         square.classList.add(`buzz`)
         square.innerHTML = "Buzz";
-
     }
     numSec.append(square);
-
 }
 
 
